@@ -8,7 +8,9 @@ const TestimonialCard = ({ rating, text, name, role, avatarSrc }) => {
         {/* Rating */}
         <div className="flex items-center mb-4">
           <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-          <span className="ml-2 text-xl font-semibold text-white">{rating.toFixed(1)}</span>
+          <span className="ml-2 text-xl font-semibold text-white">
+            {typeof rating === 'number' ? rating.toFixed(1) : 'N/A'}
+          </span>
         </div>
   
         {/* Testimonial text */}
