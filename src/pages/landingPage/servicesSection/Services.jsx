@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 // import SplashCursor from "../../../../yes/SplashCursor/SplashCursor";
 const Services = () => {
-  const [isClient, setIsClient] = useState(false)
- 
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
-    setIsClient(true)
-  }, [])
+    setIsClient(true);
+  }, []);
   // Animation controls
   const [cardsInView, setCardsInView] = useState({});
   const cardRefs = useRef([]);
@@ -39,12 +39,15 @@ const Services = () => {
         "https://img.freepik.com/free-photo/professional-programmer-working-late-dark-office_1098-18705.jpg",
       heading: "Development",
       description:
-        "Build fast, responsive, and scalable digital products — from web apps to mobile-first platforms.",
+        "Build fast, responsive, and scalable digital products — from web apps to mobile-first platforms. We specialize in building scalable EdTech platforms — from LMS systems to custom learning portals — using modern stacks like React, Next.js, and MongoDB. Perfect for educators, trainers, and online institutes.",
       tags: [
         "Frontend Development",
         "Backend APIs",
         "Cross-Platform Apps",
         "Performance Optimization",
+        "LMS Systems",
+        "Learning Portals",
+        "EdTech Solutions",
       ],
       buttonText: "Launch a development project",
     },
@@ -54,7 +57,7 @@ const Services = () => {
         "https://img.freepik.com/free-photo/map-lying-wooden-table_53876-105723.jpg",
       heading: "Marketing",
       description:
-        "Accelerate your brand's growth with custom digital marketing strategies tailored to your audience.",
+        "Accelerate your brand's growth with custom digital marketing strategies. As a performance-focused lead generation agency, we build funnels, landing pages, and ad campaigns that turn clicks into qualified leads. We specialize in B2B and education sector growth strategies.",
       tags: ["SEO", "SEM", "SMM", "Email Marketing", "Lead Generation"],
       buttonText: "Start a marketing campaign",
     },
@@ -62,10 +65,16 @@ const Services = () => {
       id: 4,
       image:
         "https://img.freepik.com/free-photo/3d-cartoon-scene-depicting-variety-people-multitasking_23-2151294503.jpg",
-      heading: "Performance Marketing",
+      heading: "Google Ads & PPC Campaigns",
       description:
-        "Drive measurable results with data-driven advertising strategies and campaign optimization.",
-      tags: ["PPC Campaigns", "Conversion Tracking", "A/B Testing", "Retargeting", "Analytics"],
+        "We run targeted Google Ads, Meta Ads, and remarketing campaigns with deep analytics and A/B testing to ensure every rupee brings measurable returns.",
+      tags: [
+        "PPC Campaigns",
+        "Conversion Tracking",
+        "A/B Testing",
+        "Retargeting",
+        "Analytics",
+      ],
       buttonText: "Run a performance campaign",
     },
     {
@@ -74,7 +83,7 @@ const Services = () => {
         "https://img.freepik.com/premium-photo/3d-seo-optimization-with-rocket-marketing-social-media-concept-interface-web-analytics-strategy-research-planing-laptop-3d-seo-strategy-vector-icon-render-illustration_776674-491248.jpg",
       heading: "Content & SEO",
       description:
-        "Boost organic traffic and engagement with high-quality content marketing and on-page SEO.",
+        "Boost organic traffic with high-quality content and on-page SEO. We provide affordable, high-ROI SEO services for startups including keyword research, technical SEO audits, on-page optimization, and backlink building. Whether you're pre-launch or scaling, we'll help you rank faster.",
       tags: [
         "Content Strategy",
         "Blog Writing",
@@ -85,7 +94,6 @@ const Services = () => {
       buttonText: "Start a content project",
     },
   ];
-  
 
   // Setup intersection observer for each card
   useEffect(() => {

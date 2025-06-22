@@ -46,7 +46,9 @@ export default function AboutUs() {
           {/* Years of Experience Box */}
         </div>
         <div className="absolute bottom-2 flex gap-3 w-fit left-0 bg-violet-500 text-black px-4 py-4 font-bold rounded-tl-xl rounded-br-3xl rounded-tr-3xl rounded-bl-xl">
-          <div className="text-3xl lg:text-6xl font-black w-max text-white">5</div>
+          <div className="text-3xl lg:text-6xl font-black w-max text-white">
+            5
+          </div>
           <div className="grid w-max">
             <span className="text-xl lg:text-4xl text-white">Years</span>{" "}
             <span className="text-sm text-white">of Experience</span>
@@ -66,8 +68,15 @@ export default function AboutUs() {
           Digital Agency
         </h1>
 
+        <p className="text-gray-400 mb-4">
+          GroViaUs is a full-service digital marketing agency in Delhi that
+          helps startups, educators, and local businesses grow online through
+          SEO, content, performance marketing, and custom development.
+        </p>
         <p className="text-gray-400 mb-8">
-        We are a creative digital agency that transforms ideas into exceptional digital experiences. With our innovative approach and cutting-edge technology, we help businesses thrive in the digital landscape.
+          Based in Delhi NCR, GroViaUs works with Indian businesses to deliver
+          performance marketing, SEO, and web development that drives local
+          visibility and conversions.
         </p>
 
         <div className="space-y-4 mb-10">

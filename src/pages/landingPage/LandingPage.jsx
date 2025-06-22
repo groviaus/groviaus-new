@@ -5,6 +5,7 @@ import Project from "./projectsSection/Project";
 import Testimonials from "./testimonialSection/Testimonial";
 import Footer from "../footer/Footer";
 import Contact from "./contactSection/Contact";
+import Faq from "./faqSection/Faq";
 function LandingPage() {
   return (
     <>
@@ -14,6 +15,7 @@ function LandingPage() {
       <Project />
       <Testimonials />
       <Contact />
+      <Faq />
       <Footer />
     </>
   );
