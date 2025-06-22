@@ -11,18 +11,18 @@ export default function sitemap() {
       changeFrequency: "daily",
       priority: 1.0,
     },
-    {
-      url: "/about",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: "/contact",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
+    // {
+    //   url: "/about",
+    //   lastModified: new Date(),
+    //   changeFrequency: "weekly",
+    //   priority: 0.7,
+    // },
+    // {
+    //   url: "/contact",
+    //   lastModified: new Date(),
+    //   changeFrequency: "weekly",
+    //   priority: 0.7,
+    // },
   ];
 
   const routes = staticPages.map((page) => ({
