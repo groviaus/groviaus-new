@@ -10,7 +10,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "GroViaUs – Best Digital Marketing & EdTech Agency in Delhi",
+    default: "GroViaUs - Best Digital Marketing & EdTech Agency in Delhi",
     template: "%s | GroViaUs",
   },
   description:
@@ -27,17 +27,17 @@ export const metadata = {
     "affordable web development Delhi",
   ],
   openGraph: {
-    title: "GroViaUs – Best Digital Marketing & EdTech Agency in Delhi",
+    title: "GroViaUs - Best Digital Marketing & EdTech Agency in Delhi",
     description:
       "India's top digital and EdTech agency for SEO, lead generation, web design, and Google Ads. We help startups and businesses grow online.",
     url: "https://www.groviaus.com",
     siteName: "GroViaUs",
     images: [
       {
-        url: "https://www.groviaus.com/og-image.jpg",
+        url: "https://www.groviaus.com/logo.png",
         width: 1200,
         height: 630,
-        alt: "GroViaUs – Best digital marketing agency in Delhi",
+        alt: "GroViaUs - Best digital marketing agency in Delhi",
       },
     ],
     locale: "en_IN",
@@ -45,10 +45,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GroViaUs – Website Development & Lead Gen Agency in India",
+    title: "GroViaUs - Website Development & Lead Gen Agency in India",
     description:
       "GroViaUs provides web development, SEO, digital ads, and EdTech services for educators and startups in Delhi and across India.",
-    images: ["https://www.groviaus.com/twitter-image.jpg"],
+    images: ["https://www.groviaus.com/logo.png"],
   },
   metadataBase: new URL("https://www.groviaus.com"),
   icons: {
