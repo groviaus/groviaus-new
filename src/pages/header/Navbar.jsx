@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,8 +43,9 @@ export default function Navbar() {
       <div className="absolute left-1/2 transform -translate-x-1/2">
         <Link href="/" className="flex items-center">
           <div className="flex items-center">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-400 to-blue-500 mr-1.5"></div>
-            <span className="text-xl font-bold tracking-tight">Groviaus</span>
+            <Image src="/logo.png" alt="Groviaus" width={100} height={100} />
+            {/* <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-400 to-blue-500 mr-1.5"></div> */}
+            {/* <span className="text-xl font-bold tracking-tight">Groviaus</span> */}
           </div>
         </Link>
       </div>
