@@ -4,22 +4,26 @@ export default function BrandMentionTracker() {
   return (
     <Script id="brand-mention-tracker" strategy="afterInteractive">
       {`
-        const brandVariants = ['groviaus', 'grovia', 'grovius', 'growvius'];
-        document.addEventListener('copy', (e) => {
-          const text = window.getSelection().toString().toLowerCase();
-          if (brandVariants.some(variant => text.includes(variant))) {
-            // Send to analytics
+        document.addEventListener('copy', function(event) {
+          const selectedText = window.getSelection().toString().toLowerCase();
+          const brandVariants = [
+            'groviaus', 'grovia', 'grovius', 'growvius', 'grociaus'
+          ];
+          
+          if (brandVariants.some(variant => selectedText.includes(variant))) {
+            // Send to Google Analytics
             if (typeof gtag === 'function') {
               gtag('event', 'brand_mention_copy', {
-                event_category: 'Brand',
-                event_label: text.substring(0, 50)
+                'event_category': 'Brand',
+                'event_label': selectedText.substring(0, 100)
               });
             }
-            // Send to custom endpoint
+            
+            // Send to your backend
             fetch('/api/track-mention', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ text })
+              body: JSON.stringify({ text: selectedText })
             });
           }
         });

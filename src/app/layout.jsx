@@ -29,18 +29,16 @@ export const metadata = {
     "social media marketing India",
     "eLearning development company",
     "affordable web development Delhi",
-    "best digital marketing agency in Delhi",
-    "website development company India",
-    "top edtech agency",
-    "SEO services for startups",
-    "lead generation company Delhi",
-    "Google Ads agency",
-    "social media marketing India",
-    "eLearning development company",
-    "affordable web development Delhi",
-    "GroViaUs",
     "Groviaus",
     "groviaus",
+    "groviaus agency",
+    "Grovius",
+    "growvius",
+    "groviaus digital",
+    "groviaus digital agency",
+    "groviaus digital marketing",
+    "groviaus digital marketing agency",
+    "groviaus digital marketing agency in delhi",
   ].filter((value, index, self) => self.indexOf(value) === index),
   openGraph: {
     title: "GroViaUs - Best Digital Marketing & EdTech Agency in Delhi",
@@ -68,9 +66,9 @@ export const metadata = {
   },
   metadataBase: new URL("https://www.groviaus.com"),
   icons: {
-    icon: "/favicon.ico?v=2",
-    shortcut: "/favicon.ico?v=2",
-    apple: "/apple-touch-icon.png?v=2",
+    icon: "/favicon.ico?v=3",
+    shortcut: "/favicon.ico?v=3",
+    apple: "/apple-touch-icon.png?v=3",
   },
   viewport: {
     width: "device-width",
@@ -78,9 +76,6 @@ export const metadata = {
     maximumScale: 5,
     interactiveWidget: "resizes-content",
   },
-  // alternates: {
-  //   canonical: "https://www.groviaus.com",
-  // },
 };
 
 const structuredData = {
@@ -118,28 +113,36 @@ const structuredDataBrand = {
 const structuredDataLocal = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "GroViaUs",
+  name: "GroViaUs Agency",
   image: "https://www.groviaus.com/logo.png",
   "@id": "https://www.groviaus.com",
   url: "https://www.groviaus.com",
-  telephone: "+91-0000000000",
+  telephone: "+919310156995",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Delhi",
-    addressLocality: "Delhi",
-    postalCode: "110001",
+    streetAddress: "11th Floor, Bhutani City Center, Sector 32",
+    addressLocality: "NOIDA",
+    postalCode: "201301",
     addressCountry: "IN",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 28.6139,
-    longitude: 77.209,
+    latitude: 28.57405315949912,
+    longitude: 77.3535590891702,
   },
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    opens: "09:00",
-    closes: "18:00",
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
+    opens: "10:00",
+    closes: "20:00",
   },
 };
 
@@ -222,6 +225,79 @@ const structuredDataFAQ = {
   ],
 };
 
+const structuredDataServices = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Service",
+        name: "SEO Services",
+        description:
+          "Technical SEO, local SEO, and content optimization for startups and businesses in Delhi",
+        serviceType: "Search Engine Optimization",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Service",
+        name: "Website Development",
+        description:
+          "Responsive websites, SaaS platforms, and custom web applications using React and Next.js",
+        serviceType: "Web Development",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: {
+        "@type": "Service",
+        name: "Google Ads Management",
+        description:
+          "Performance-driven Google Ads campaigns for lead generation and brand visibility.",
+        serviceType: "Pay Per Click Advertising",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 4,
+      item: {
+        "@type": "Service",
+        name: "Social Media Marketing",
+        description:
+          "Engaging social media strategies for brands on platforms like Instagram, Facebook, and LinkedIn.",
+        serviceType: "Social Media Marketing",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 5,
+      item: {
+        "@type": "Service",
+        name: "AI-Driven Video Production",
+        description:
+          "Creating high-quality marketing and educational videos using AI technologies.",
+        serviceType: "Video Production",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 6,
+      item: {
+        "@type": "Service",
+        name: "EdTech Solutions",
+        description:
+          "Building custom Learning Management Systems (LMS) and educational platforms.",
+        serviceType: "Education Technology",
+      },
+    },
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -257,8 +333,23 @@ export default function RootLayout({ children }) {
         <Script
           id="local-business-schema"
           type="application/ld+json"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredDataLocal),
+            __html: JSON.stringify(structuredDataLocal).replace(
+              /</g,
+              "\\u003c"
+            ),
+          }}
+        />
+        <Script
+          id="service-schema"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredDataServices).replace(
+              /</g,
+              "\\u003c"
+            ),
           }}
         />
       </head>
