@@ -48,7 +48,7 @@ export const metadata = {
     siteName: "GroViaUs",
     images: [
       {
-        url: "https://www.groviaus.com/logo.png",
+        url: "https://www.groviaus.com/icon.png",
         width: 1200,
         height: 630,
         alt: "GroViaUs - Best digital marketing agency in Delhi",
@@ -62,7 +62,7 @@ export const metadata = {
     title: "GroViaUs - Website Development & Lead Gen Agency in India",
     description:
       "GroViaUs provides web development, SEO, digital ads, and EdTech services for educators and startups in Delhi and across India.",
-    images: ["https://www.groviaus.com/logo.png"],
+    images: ["https://www.groviaus.com/icon.png"],
   },
   metadataBase: new URL("https://www.groviaus.com"),
   icons: {
@@ -276,17 +276,6 @@ const structuredDataServices = {
     {
       "@type": "ListItem",
       position: 5,
-      item: {
-        "@type": "Service",
-        name: "AI-Driven Video Production",
-        description:
-          "Creating high-quality marketing and educational videos using AI technologies.",
-        serviceType: "Video Production",
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 6,
       item: {
         "@type": "Service",
         name: "EdTech Solutions",
