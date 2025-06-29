@@ -49,9 +49,11 @@ export default function ThreeDCard({ content = {} }) {
 
         {/* CTA Button */}
         <CardItem translateZ="70" className="w-full">
+        <a href="#contact-section">
           <button className="w-full py-3 bg-orange-500 text-white font-medium rounded-full text-sm uppercase tracking-wide hover:bg-violet-500 transition-all duration-300 hover:cursor-none hover:shadow-2xl hover:drop-shadow-black/80">
             {buttonText}
           </button>
+        </a>
         </CardItem>
       </CardBody>
     </CardContainer>

@@ -7,7 +7,7 @@ const faqData = [
   {
     question: "What digital marketing services does GroViaUs offer?",
     answer:
-      "GroViaUs offers SEO, Google Ads (PPC), content marketing, social media marketing, and performance-driven lead generation strategies tailored for startups, businesses, and educators.",
+      "GroViaUs offers Website/App Development, SEO, Google Ads (PPC), content marketing, social media marketing, and performance-driven lead generation strategies tailored for startups, businesses, and educators.",
   },
   {
     question: "Is GroViaUs a digital marketing agency based in Delhi?",
@@ -74,7 +74,7 @@ function FloatingParticles() {
 }
 
 export default function Faq() {
-  const [openIndex, setOpenIndex] = useState(1);
+  const [openIndex, setOpenIndex] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState(-1);
 
   const toggleFAQ = (index) => {

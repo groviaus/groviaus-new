@@ -20,7 +20,7 @@ export default function Navbar() {
       {/* Desktop Navigation */}
       <div className="hidden sm:flex items-center gap-10">
         <Link
-          href="#home"
+          href=""
           className="text-gray-800 hover:text-gray-600 text-sm font-medium tracking-wide"
         >
           Home
@@ -43,7 +43,7 @@ export default function Navbar() {
       <div className="absolute left-1/2 transform -translate-x-1/2">
         <Link href="/" className="flex items-center">
           <div className="flex items-center">
-            <Image src="/logo.png" alt="Groviaus" width={100} height={100} />
+            <Image src="/logo.png" alt="Groviaus" width={180} height={180} />
             {/* <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-400 to-blue-500 mr-1.5"></div> */}
             {/* <span className="text-xl font-bold tracking-tight">Groviaus</span> */}
           </div>
@@ -52,7 +52,7 @@ export default function Navbar() {
 
       {/* Contact Link - Desktop */}
       <Link
-        href="#contact"
+        href="#contact-section"
         className="hidden sm:block text-gray-800 hover:text-gray-600 text-sm font-medium tracking-wide"
       >
         Contact Us
