@@ -1,6 +1,7 @@
-import Navbar from "../header/Navbar";
-import Hero from "../hero/Hero";
 import Orbits from "../hero/Orbits";
+// import Navbar from "../header/Navbar";
+import Hero from "../hero/Hero";
+// import SmoothCursor from "../ui/smooth-cursor";
 // import { SmoothCursor } from "@/components/ui/smooth-cursor";
 export default function HeroSection() {
   return (
@@ -24,7 +25,7 @@ export default function HeroSection() {
         <Orbits size={1300} border="!border-t-1" />
         <Orbits size={1450} border="!border-b-1" />
         <Orbits size={1600} border="!border-r-1" />
-        <Navbar />
+        {/* <Navbar /> */}
         <Hero />
         {/* <SmoothCursor /> */}
       </div>

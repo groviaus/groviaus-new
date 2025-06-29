@@ -11,6 +11,12 @@ export default function sitemap() {
       changeFrequency: "daily",
       priority: 1.0,
     },
+    {
+      url: "/brand",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
     // {
     //   url: "/about",
     //   lastModified: new Date(),

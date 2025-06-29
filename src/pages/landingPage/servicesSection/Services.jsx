@@ -18,8 +18,7 @@ const Services = () => {
   const serviceCards = [
     {
       id: 1,
-      image:
-        "https://img.freepik.com/free-psd/landing-page-minimal-style-art-gallery-with-man_23-2148821375.jpg",
+      image: "/images/ourService/design.avif",
       heading: "Design",
       description:
         "Craft stunning and user-centric designs — from modern landing pages to complex SaaS interfaces.",
@@ -35,8 +34,7 @@ const Services = () => {
     },
     {
       id: 2,
-      image:
-        "https://img.freepik.com/free-photo/professional-programmer-working-late-dark-office_1098-18705.jpg",
+      image: "/images/ourService/development.avif",
       heading: "Development",
       description:
         "Build fast, responsive, and scalable digital products — from web apps to mobile-first platforms. We specialize in building scalable EdTech platforms — from LMS systems to custom learning portals — using modern stacks like React, Next.js, and MongoDB. Perfect for educators, trainers, and online institutes.",
@@ -53,8 +51,7 @@ const Services = () => {
     },
     {
       id: 3,
-      image:
-        "https://img.freepik.com/free-photo/map-lying-wooden-table_53876-105723.jpg",
+      image: "/images/ourService/marketing.avif",
       heading: "Marketing",
       description:
         "Accelerate your brand's growth with custom digital marketing strategies. As a performance-focused lead generation agency, we build funnels, landing pages, and ad campaigns that turn clicks into qualified leads. We specialize in B2B and education sector growth strategies.",
@@ -63,8 +60,7 @@ const Services = () => {
     },
     {
       id: 4,
-      image:
-        "https://img.freepik.com/free-photo/3d-cartoon-scene-depicting-variety-people-multitasking_23-2151294503.jpg",
+      image: "/images/ourService/campaigns.avif",
       heading: "Google Ads & PPC Campaigns",
       description:
         "We run targeted Google Ads, Meta Ads, and remarketing campaigns with deep analytics and A/B testing to ensure every rupee brings measurable returns.",
@@ -79,8 +75,7 @@ const Services = () => {
     },
     {
       id: 5,
-      image:
-        "https://img.freepik.com/premium-photo/3d-seo-optimization-with-rocket-marketing-social-media-concept-interface-web-analytics-strategy-research-planing-laptop-3d-seo-strategy-vector-icon-render-illustration_776674-491248.jpg",
+      image: "/images/ourService/seo.avif",
       heading: "Content & SEO",
       description:
         "Boost organic traffic with high-quality content and on-page SEO. We provide affordable, high-ROI SEO services for startups including keyword research, technical SEO audits, on-page optimization, and backlink building. Whether you're pre-launch or scaling, we'll help you rank faster.",
@@ -156,7 +151,10 @@ const Services = () => {
   };
 
   return (
-    <section className="bg-stone-900 flex justify-center items-center z-[999] relative -mt-5 border-2  border-purple-100 shadow-2xl rounded-4xl h-max pb-20 pt-1 m-1 sm:mx-10 -mb-10">
+    <section
+      id="our-services"
+      className="bg-stone-900 flex justify-center items-center z-[999] relative -mt-5 border-2  border-purple-100 shadow-2xl rounded-4xl h-max pb-20 pt-1 m-1 sm:mx-10 -mb-10"
+    >
       <div className="grid sm:grid-cols-3 grid-cols-1 pt-10 items-center justify-center gap-6 px-5 sm:px-10">
         {/* First column with title and first card */}
         <div className="sm:row-span-2 row-span-1 grid items-center justify-center gap-6 sm:gap-10 md:static sticky top-5">
