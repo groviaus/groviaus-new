@@ -1,6 +1,5 @@
-import { MetadataRoute } from "next";
 
-export default function robots(): MetadataRoute.Robots {
+export default function robots() {
   return {
     rules: [
       {
@@ -33,7 +32,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
       {
-        userAgent: "Bytespider", // ByteDance (TikTok AI)
+        userAgent: "Bytespider", // ByteDance AI
         allow: "/",
       },
       {
@@ -41,14 +40,15 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
       {
-        userAgent: "Grokbot", // Hypothetical user-agent for Grok (xAI)
+        userAgent: "Grokbot", // xAI Grok (hypothetical or future identifier)
         allow: "/",
       },
       {
-        userAgent: "DeepSeekBot", // Hypothetical/expected identifier
+        userAgent: "DeepSeekBot", // DeepSeek AI crawler (if it exists)
         allow: "/",
       },
     ],
     sitemap: "https://www.groviaus.com/sitemap.xml",
+    host: "https://www.groviaus.com",
   };
 }
