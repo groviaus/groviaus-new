@@ -69,18 +69,18 @@ export default function Footer() {
           <nav>
             <ul className="flex flex-wrap space-x-8">
               <li>
-                <a
-                  // href="#home"
+                <Link
+                  href="/"
                   className="text-white hover:text-violet transition-colors"
                   onClick={() => {
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                   }}
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#work"
                   className="text-white hover:text-violet transition-colors"
                   onClick={(e) => {
@@ -89,7 +89,7 @@ export default function Footer() {
                   }}
                 >
                   Work
-                </a>
+                </Link>
               </li>
               {/* <li>
                 <a
@@ -101,8 +101,8 @@ export default function Footer() {
               </li> */}
               
               <li>
-                <a
-                  href="#contact"
+                <Link
+                  href="#contact-section"
                   className="text-white hover:text-violet transition-colors"
                   onClick={(e) => {
                     e.preventDefault();
@@ -110,7 +110,7 @@ export default function Footer() {
                   }}
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

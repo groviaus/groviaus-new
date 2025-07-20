@@ -42,12 +42,12 @@ export default function Navbar() {
           >
             Work
           </Link>
-          <Link
+          {/* <Link
             href="/brand"
             className="text-gray-800 hover:text-gray-600 text-sm font-medium tracking-wide"
           >
             Our Brand
-          </Link>
+          </Link> */}
           {/* <Link
           href="#"
           className="text-gray-800 hover:text-gray-600 text-sm font-medium tracking-wide"
