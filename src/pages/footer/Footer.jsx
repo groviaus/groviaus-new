@@ -1,6 +1,7 @@
 "use client";
 import { Facebook, Instagram, Twitter, Youtube, ArrowBigUp } from "lucide-react";
 import CircularText from "../../../yes/CircularText/CircularText";
+import Link from "next/link";
 
 export default function Footer() {
   return (
