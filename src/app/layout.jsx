@@ -14,12 +14,46 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "GroViaUs - Best Digital Marketing & EdTech Agency in Delhi",
-    template: "%s | GroViaUs",
+    default:
+      "GroViaUs - Best Digital Marketing & EdTech Agency in Delhi | Grow Via Us",
+    template: "%s | GroViaUs - Grow Via Us",
   },
   description:
-    "GroViaUs is a Delhi-based digital marketing and EdTech agency offering SEO, website development, AI-driven video production, Google Ads, and lead generation services tailored for startups, educators, and businesses.",
+    "GroViaUs is a Delhi-based digital marketing and EdTech agency helping businesses Grow Via Us. We offer SEO, website development, Google Ads, and lead generation services. Get guaranteed results with our proven strategies.",
   keywords: [
+    "grow via us",
+    "growviaus",
+    "gro via us",
+    "grow via us agency",
+    "growviaus agency",
+    "gro via us agency",
+    "grow via us digital agency",
+    "growviaus digital agency",
+    "gro via us digital agency",
+    "grow via us marketing agency",
+    "growviaus marketing agency",
+    "gro via us marketing agency",
+    "grow via us delhi",
+    "growviaus delhi",
+    "gro via us delhi",
+    "grow via us digital marketing",
+    "growviaus digital marketing",
+    "gro via us digital marketing",
+    "grow via us seo",
+    "growviaus seo",
+    "gro via us seo",
+    "grow via us website development",
+    "growviaus website development",
+    "gro via us website development",
+    "grow via us google ads",
+    "growviaus google ads",
+    "gro via us google ads",
+    "grow via us lead generation",
+    "growviaus lead generation",
+    "gro via us lead generation",
+    "grow via us edtech",
+    "growviaus edtech",
+    "gro via us edtech",
     "best digital marketing agency in Delhi",
     "website development company India",
     "top edtech agency",
@@ -39,19 +73,30 @@ export const metadata = {
     "groviaus digital marketing",
     "groviaus digital marketing agency",
     "groviaus digital marketing agency in delhi",
+    "digital marketing agency delhi ncr",
+    "SEO agency delhi ncr",
+    "web development agency delhi ncr",
+    "google ads agency delhi",
+    "lead generation agency delhi",
+    "edtech agency delhi",
+    "startup digital marketing delhi",
+    "business growth agency delhi",
+    "online marketing agency delhi",
+    "digital transformation agency delhi",
   ].filter((value, index, self) => self.indexOf(value) === index),
   openGraph: {
-    title: "GroViaUs - Best Digital Marketing & EdTech Agency in Delhi",
+    title:
+      "GroViaUs - Best Digital Marketing & EdTech Agency in Delhi | Grow Via Us",
     description:
-      "India's top digital and EdTech agency for SEO, lead generation, web design, and Google Ads. We help startups and businesses grow online.",
+      "GroViaUs helps businesses Grow Via Us through proven SEO, website development, and digital marketing strategies. Delhi's leading digital agency for guaranteed results.",
     url: "https://www.groviaus.com",
-    siteName: "GroViaUs",
+    siteName: "GroViaUs - Grow Via Us",
     images: [
       {
         url: "https://www.groviaus.com/icon.png",
         width: 1200,
         height: 630,
-        alt: "GroViaUs - Best digital marketing agency in Delhi",
+        alt: "GroViaUs - Grow Via Us Digital Marketing Agency in Delhi",
       },
     ],
     locale: "en_IN",
@@ -59,9 +104,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GroViaUs - Website Development & Lead Gen Agency in India",
+    title: "GroViaUs - Grow Via Us Digital Marketing Agency in Delhi",
     description:
-      "GroViaUs provides web development, SEO, digital ads, and EdTech services for educators and startups in Delhi and across India.",
+      "GroViaUs helps businesses Grow Via Us through SEO, web development, and digital marketing. Delhi's trusted agency for guaranteed growth and results.",
     images: ["https://www.groviaus.com/icon.png"],
   },
   metadataBase: new URL("https://www.groviaus.com"),
@@ -82,14 +127,59 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "GroViaUs",
+  alternateName: ["Grow Via Us", "GrowViaUs", "Gro Via Us"],
   url: "https://www.groviaus.com",
   logo: "https://www.groviaus.com/logo.png",
   description:
-    "GroViaUs is a full-service digital marketing and EdTech agency based in Delhi. We specialize in website development, SEO services, lead generation, AI video production, social media marketing, and Google & Meta Ads — tailored for startups, educators, and businesses in India.",
+    "GroViaUs is a full-service digital marketing and EdTech agency based in Delhi. We help you Grow Via Us through website development, SEO services, lead generation, AI video production, social media marketing, and Google & Meta Ads — tailored for startups, educators, and businesses in India.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Delhi",
     addressCountry: "IN",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+919310156995",
+    contactType: "customer service",
+    areaServed: "IN",
+    availableLanguage: "English",
+  },
+  sameAs: [
+    "https://www.linkedin.com/company/groviaus",
+    "https://twitter.com/groviaus",
+    "https://www.facebook.com/groviaus",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Digital Marketing Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "SEO Services",
+          description:
+            "Search Engine Optimization to help your business Grow Via Us",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Website Development",
+          description:
+            "Custom website development to help your business Grow Via Us",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Google Ads Management",
+          description: "PPC advertising to help your business Grow Via Us",
+        },
+      },
+    ],
   },
 };
 
@@ -104,20 +194,35 @@ const structuredDataBrand = {
     "Groviaus",
     "GroviaUs",
     "Grovius Digital",
+    "Grow Via Us",
+    "GrowViaUs",
+    "Gro Via Us",
+    "GrowViaUs Agency",
+    "Grow Via Us Agency",
+    "Gro Via Us Agency",
   ],
-  description: "Digital Marketing & EdTech Agency in Delhi",
+  description:
+    "Digital Marketing & EdTech Agency in Delhi - We help you Grow Via Us. Specializing in SEO, website development, and lead generation services.",
   logo: "https://www.groviaus.com/logo.png",
-  slogan: "Best Digital Marketing & EdTech Agency in Delhi",
+  slogan: "Best Digital Marketing & EdTech Agency in Delhi - Grow Via Us",
 };
 
 const structuredDataLocal = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "GroViaUs Agency",
+  name: "GroViaUs Agency - Grow Via Us",
+  alternateName: [
+    "Grow Via Us Agency",
+    "GrowViaUs Agency",
+    "Gro Via Us Agency",
+  ],
   image: "https://www.groviaus.com/logo.png",
   "@id": "https://www.groviaus.com",
   url: "https://www.groviaus.com",
   telephone: "+919310156995",
+  email: "hello@groviaus.com",
+  description:
+    "GroViaUs is a Delhi-based digital marketing agency helping businesses Grow Via Us through SEO, website development, and digital marketing services.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "11th Floor, Bhutani City Center, Sector 32",
@@ -129,6 +234,33 @@ const structuredDataLocal = {
     "@type": "GeoCoordinates",
     latitude: 28.57405315949912,
     longitude: 77.3535590891702,
+  },
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Delhi",
+    },
+    {
+      "@type": "City",
+      name: "Noida",
+    },
+    {
+      "@type": "City",
+      name: "Gurgaon",
+    },
+    {
+      "@type": "Country",
+      name: "India",
+    },
+  ],
+  serviceArea: {
+    "@type": "GeoCircle",
+    geoMidpoint: {
+      "@type": "GeoCoordinates",
+      latitude: 28.57405315949912,
+      longitude: 77.3535590891702,
+    },
+    geoRadius: "50000",
   },
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
@@ -143,6 +275,41 @@ const structuredDataLocal = {
     ],
     opens: "10:00",
     closes: "20:00",
+  },
+  priceRange: "₹₹₹",
+  paymentAccepted: ["Cash", "Credit Card", "Bank Transfer"],
+  currenciesAccepted: "INR",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Digital Marketing Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "SEO Services",
+          description:
+            "Search Engine Optimization to help your business Grow Via Us",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Website Development",
+          description:
+            "Custom website development to help your business Grow Via Us",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Google Ads Management",
+          description: "PPC advertising to help your business Grow Via Us",
+        },
+      },
+    ],
   },
 };
 
@@ -220,6 +387,38 @@ const structuredDataFAQ = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "You can pronounce it by breaking it down: 'Grow' + 'Via' + 'Us'. Phonetically, that's 'Grow-Vee-uh-Us'. Our name reflects our mission to help you Grow Via Us.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What does Grow Via Us mean?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Grow Via Us means we help your business grow through our digital marketing services. Our name GroViaUs is a combination of 'Grow' + 'Via' + 'Us', representing our mission to help businesses grow via our expertise in SEO, web development, and digital marketing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is GroViaUs the same as Grow Via Us?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, GroViaUs is our brand name and 'Grow Via Us' is our mission statement. Both refer to the same Delhi-based digital marketing agency that helps businesses grow through proven digital marketing strategies.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How can GroViaUs help my business grow?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "GroViaUs helps your business grow through comprehensive digital marketing services including SEO optimization, website development, Google Ads management, lead generation, and social media marketing. Our proven strategies deliver guaranteed results.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Why choose GroViaUs for digital marketing in Delhi?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Choose GroViaUs because we're Delhi's trusted digital marketing agency with proven results. We help businesses Grow Via Us through data-driven strategies, transparent reporting, and guaranteed ROI. Our local expertise combined with global best practices ensures your success.",
       },
     },
   ],

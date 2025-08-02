@@ -17,18 +17,12 @@ export default function sitemap() {
       changeFrequency: "weekly",
       priority: 0.9,
     },
-    // {
-    //   url: "/about",
-    //   lastModified: new Date(),
-    //   changeFrequency: "weekly",
-    //   priority: 0.7,
-    // },
-    // {
-    //   url: "/contact",
-    //   lastModified: new Date(),
-    //   changeFrequency: "weekly",
-    //   priority: 0.7,
-    // },
+    {
+      url: "/grow-via-us",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
   ];
 
   const routes = staticPages.map((page) => ({
