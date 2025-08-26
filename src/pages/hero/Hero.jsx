@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="flex items-center justify-center gap-1 sm:gap-2 -mt-2 mb-4">
           <CircleandCursor className="animate-float" />
           <h1 className="text-3xl sm:text-5xl font-bold tracking-tight leading-tight mb-4 sm:mb-6">
-            of your busines
+            of your business
           </h1>
         </div>
 
